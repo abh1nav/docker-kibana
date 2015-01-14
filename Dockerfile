@@ -1,6 +1,6 @@
-# Version 1.0
+# Version 1.1
 
-FROM devdb/elasticsearch:latest
+FROM devdb/elasticsearch:1.4.2
 
 MAINTAINER Abhinav Ajgaonkar <abhinav316@gmail.com>
 
@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN \
 	mkdir -p /opt/kibana /etc/service/kibana; \
-	wget -O - https://download.elasticsearch.org/kibana/kibana/kibana-4.0.0-BETA2.tar.gz \
+	wget -O - https://download.elasticsearch.org/kibana/kibana/kibana-4.0.0-BETA3.tar.gz \
 	| tar xzf - --strip-components=1 -C "/opt/kibana";
 
 COPY run /etc/service/kibana/
