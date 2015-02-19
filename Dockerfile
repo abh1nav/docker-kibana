@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN \
 	mkdir -p /opt/kibana /etc/service/kibana; \
-	wget -O - https://download.elasticsearch.org/kibana/kibana/kibana-4.0.0-beta3.tar.gz \
+	wget -O - https://download.elasticsearch.org/kibana/kibana/kibana-4.0.0-linux-x64.tar.gz \
 	| tar xzf - --strip-components=1 -C "/opt/kibana";
 
 COPY run /etc/service/kibana/
