@@ -1,6 +1,6 @@
 # DevDB Elasticsearch + Kibana
 
-Elasticsearch 1.4.2 + Kibana 4.0.0-BETA3 in a docker container for a fast throwaway environment.
+Elasticsearch 1.4.4 + Kibana 4.0.0 in a docker container for a fast throwaway environment.
 
 # Quickstart
 
