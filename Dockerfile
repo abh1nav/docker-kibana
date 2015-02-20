@@ -15,7 +15,7 @@ COPY run /etc/service/kibana/
 
 WORKDIR /opt/kibana
 
-EXPOSE 80
+EXPOSE 5601
 
 CMD ["/sbin/my_init"]
 
