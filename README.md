@@ -1,6 +1,6 @@
 # DevDB Elasticsearch + Kibana
 
-Elasticsearch 1.4.4 + Kibana 4.0.0 in a docker container for a fast throwaway environment.
+Elasticsearch 1.5.1 + Kibana 4.0.2 in a docker container for a fast throwaway environment.
 
 # Quickstart
 
@@ -31,7 +31,7 @@ Then, you can point your browser to `http://localhost:5601` and the Kibana4 dash
 
 ```
 docker pull devdb/kibana:latest
-docker run -d --name kibana -p 5601:5601 -v /tmp/kibana:/opt/elasticsearch/data devdb/kibana
+docker run -d --name kibana -p 5601:5601 -p 9200:9200 -v /tmp/kibana:/opt/elasticsearch/data devdb/kibana
 ```
 
 where `/tmp/kibana` is where the data files are stored on your host machine.
