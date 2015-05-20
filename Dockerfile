@@ -1,6 +1,4 @@
-# Version 1.1
-
-FROM devdb/elasticsearch:1.5.1
+FROM devdb/elasticsearch:1.5.2
 
 MAINTAINER Abhinav Ajgaonkar <abhinav316@gmail.com>
 
